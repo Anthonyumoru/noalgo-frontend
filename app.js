@@ -1,4 +1,5 @@
-const API_URL = "http://localhost:8080/api/deals";
+// TO THIS - after Render gives you URL
+const API_URL = "https://noalgo-api.onrender.com/api/deals";
 
 async function loadDeals() {
     const container = document.getElementById('deals-container');
