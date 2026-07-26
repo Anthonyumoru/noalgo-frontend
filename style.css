@@ -1,0 +1,4 @@
+body {font-family: Arial; margin:0; background:#f8f9fa;}
+header {background:#ff4d4d; color:white; padding:20px; text-align:center;}
+.deal-card {background:white; margin:15px; padding:15px; border-radius:10px; box-shadow:0 2px 5px rgba(0,0,0,0.1);}
+.deal-card h3 {color:#ff4d4d; margin:0 0 10px 0;}
