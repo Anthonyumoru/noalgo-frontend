@@ -1,4 +1,3 @@
-// TO THIS - after Render gives you URL
 const API_URL = "https://noalgo-api.onrender.com/api/deals";
 
 async function loadDeals() {
@@ -18,3 +17,4 @@ async function loadDeals() {
     }
 }
 loadDeals();
+
