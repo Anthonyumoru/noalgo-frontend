@@ -1,4 +1,4 @@
-const API_URL = "https://noalgo-backend.onrender.com";
+const API_URL = "https://onrender.com";
 
 async function loadDeals() {
     const container = document.getElementById('deals-container');
