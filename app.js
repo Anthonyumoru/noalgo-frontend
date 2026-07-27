@@ -1,4 +1,4 @@
-const API_URL = "https://noalgo-api.onrender.com/api/deals";
+const API_URL = "https://noalgo-backend.onrender.com";
 
 async function loadDeals() {
     const container = document.getElementById('deals-container');
@@ -7,14 +7,14 @@ async function loadDeals() {
         const deals = await res.json();
         container.innerHTML = deals.map(d => `
             <div class="deal-card">
-                <h3>${d.title}</h3>
+                <h1>${d.title}</h1>
                 <p><b>${d.discount}% OFF</b></p>
-                <p class="price">Now: ₦${d.price}</p>
+                <p class="price">Now: $${d.price}</p>
             </div>
         `).join('');
-    } catch {
+    } catch (e) {
         container.innerHTML = "<p>Can't connect. Backend not running yet.</p>";
     }
 }
-loadDeals();
 
+loadDeals();
